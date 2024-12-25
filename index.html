@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Dalmatian Coin</title>
+<link href="styles.css" rel="stylesheet"/>
+<script>
+        // Function to copy the contract address to the clipboard
+        function copyContract() {
+            const contractAddress = "0x996977bfdE2d43D1034B5Fb30a2119d5EF639588";
+            navigator.clipboard.writeText(contractAddress).then(() => {
+                alert("Contract address copied to clipboard: " + contractAddress);
+            });
+        }
+
+        // Simulated function to fetch real-time price (connect to a real API in production)
+        function fetchPrice() {
+            // Simulated price (update with real data from an API like CoinGecko)
+            document.getElementById("price").innerText = "$0.000031";
+        }
+    </script>
+</head>
+<body onload="fetchPrice()">
+<header>
+<div class="logo">
+<h1>Dalmatian Coin</h1>
+</div>
+<nav>
+<ul>
+<li><a href="#about">About Us</a></li>
+<li><a href="#tokenomics">Tokenomics</a></li>
+<li><a href="#roadmap">Roadmap</a></li>
+<li><a href="#community">Community</a></li>
+</ul>
+</nav>
+</header>
+<main>
+<section id="timer-section" style="display: flex; justify-content: center; align-items: center; height: 100px;">
+<div id="timer" style="background-color: red; color: white; font-size: 2rem; padding: 20px; border-radius: 10px;">
+                Listed on PancakeSwap in: <span id="countdown-timer"></span>
+</div>
+</section>
+<script>
+            // Updated script for countdown to specific date
+            function updateCountdown() {
+                const targetDate = new Date("2024-12-24T22:45:00-05:00"); // New York Time (EST)
+                const countdownElement = document.getElementById("countdown-timer");
+
+                function calculateRemainingTime() {
+                    const now = new Date();
+                    const difference = targetDate - now;
+
+                    if (difference <= 0) {
+                        countdownElement.textContent = "00:00:00:00";
+                        return;
+                    }
+
+                    const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+                    const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+                    const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+                    countdownElement.textContent = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+                }
+
+                setInterval(calculateRemainingTime, 1000);
+            }
+
+            window.onload = updateCountdown;
+        </script>
+<section id="hero">
+<h2>Join the Pack!</h2>
+<p>Dalmatian Coin: the alpha leader of canine memecoins. More than just a coin, we are a pack united by fun, loyalty, and ambition. Join the Dalmatian revolution and run with us towards a future full of barks, laughs, and success!</p>
+<div class="cta-buttons">
+<a class="btn" href="https://pancakeswap.finance/?outputCurrency=0x855C350C2eb197e42938aC8b04e8907D37526a73" target="_blank">Buy</a>
+</div>
+</section>
+<section id="image-section" style="text-align: center; padding: 30px;">
+<img alt="dalmata" src="images/dalmata.jpeg" style="max-width: 200px; border-radius: 50%;"/>
+</section>
+<section id="about">
+<h2>What is Dalmatian Coin?</h2>
+<p>Dalmatian Coin is the ultimate alpha in the memecoin world. While DOGE and its imitators compete with each other, Dalmatian Coin leads with style and character. Our mission: unify the pack under one purpose, showcasing that blockchain has space for something more loyal, strong, and fun. Are you ready to run with the Dalmatians and leave a paw print on the crypto world?</p>
+</section>
+<section id="image-section" style="text-align: center; padding: 30px;">
+<img alt="dalma" src="images/dalma.jpeg" style="max-width: 200px; border-radius: 50%;"/>
+</section>
+<section id="tokenomics">
+<div class="tokenomics-container">
+<h2>Tokenomics</h2>
+<p>Dalmatian Coin's economy is designed for sustainability and continuous growth:</p>
+<ul>
+<li><strong>60%:</strong> Initial liquidity to ensure stability.</li>
+<li><strong>25%:</strong> Strategic marketing and global expansions.</li>
+<li><strong>15%:</strong> Community development and improvement.</li>
+</ul>
+<p><strong>Total supply:</strong> 200,000,000,000 tokens.</p>
+</div>
+</section>
+<section id="image-section" style="text-align: center; padding: 30px;">
+<img alt="dal" src="images/dal.jpeg" style="max-width: 200px; border-radius: 50%;"/>
+</section>
+<section id="roadmap">
+<div class="roadmap-container">
+<h2>Roadmap</h2>
+<ul>
+<li><strong>Phase 1:</strong> Token launch and official website release.</li>
+<li><strong>Phase 2:</strong> Community building on social media with memes and contests.</li>
+<li><strong>Phase 3:</strong> Listing on decentralized exchanges and strategic partnerships.</li>
+<li><strong>Phase 4:</strong> Development of a mobile app with interactive tools to support the global community, offering advisory services and themed games with rewards. This initiative aims to position the project as a global leader in animal welfare through innovative solutions and strategic partnerships, setting new standards for socially conscious cryptocurrency projects.</li>
+</ul>
+</div>
+</section>
+<section id="image-section" style="text-align: center; padding: 30px;">
+<img alt="da" src="images/da.jpeg" style="max-width: 200px; border-radius: 50%;"/>
+</section>
+<section id="community">
+<h2>Join the Community</h2>
+<p>Be part of our pack on X.</p>
+<div class="social-links">
+<a href="https://x.com/DalmatianXCoin" target="_blank">X</a>
+</div>
+</section>
+</main>
+<footer>
+<p>© 2024 Dalmatian Coin. All rights reserved.</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,328 @@
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    background-image: url('dalmatian-pattern.png');
+    background-size: contain;
+    background-repeat: repeat;
+    color: #333;
+}
+
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    background-image: url('dalmatian-pattern.png');
+    background-size: cover;
+    background-repeat: repeat;
+    color: #333;
+}
+
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    font-size: 1.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#hero {
+    text-align: center;
+    padding: 50px;
+    background: #fff;
+}
+
+#hero .cta-buttons .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #ff0000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+section {
+    padding: 30px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+}
+
+section:nth-child(even) {
+    background-color: #000;
+    color: #fff;
+}
+
+section:nth-child(odd) {
+    background-color: #fff;
+    color: #000;
+}
+
+section:nth-child(odd) {
+    background-color: #000000; 
+    color: #ffffff; 
+}
+
+section:nth-child(even) {
+    background-color: #ffffff; 
+    color: #000000; 
+}
+
+#hero {
+    background-color: #000000; 
+    color: #ffffff; 
+    padding: 50px;
+    text-align: center;
+}
+
+header {
+    background-color: #000000; 
+    color: #ffffff; 
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    font-size: 1.5rem;
+    color: #ffffff; 
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+.tokenomics-container {
+    background: linear-gradient(135deg, #000000, #1c1c1c);
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.tokenomics-container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.tokenomics-container ul li {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+.tokenomics-container h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.tokenomics-container p {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+
+.roadmap-container {
+    background: linear-gradient(135deg, #1c1c1c, #000000);
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.roadmap-container h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.roadmap-container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.roadmap-container ul li {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.roadmap-container ul li::before {
+    content: "✓";
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+
+@media (max-width: 768px) {
+    body {
+        font-size: 90%;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #hero, .tokenomics-container, .roadmap-container {
+        padding: 20px;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+
+nav {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 15px; 
+    justify-content: center; 
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.1); 
+}
+
+
+#contract-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px; 
+    max-width: 90%; 
+    background-color: red; 
+    color: white; 
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    font-size: 0.9rem; 
+}
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+#contract-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px; 
+    max-width: 90%; 
+    background-color: red; 
+    color: white; 
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    font-size: 0.9rem; 
+}
+
+    background-color: red;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+    #timer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #timer .btn {
+        margin-top: 10px;
+    }
+}
